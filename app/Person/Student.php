@@ -2,12 +2,10 @@
 
 namespace PhpThis\Person;
 
-class Student {
-  private $name;
-  public $age;
-  
-  public function __construct($name, $age) {
+use PhpThis\Person\Person;
+
+class Student extends Person {
+  public function setName($name) {
     $this->name = $name;
-    $this->age = $age;
   }
 }

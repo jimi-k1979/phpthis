@@ -3,7 +3,7 @@ require_once('vendor/autoload.php');
 
 //phpinfo();
 
-// use PhpThis\Menu
+// first bit
 //use PhpThis\Person\Person;
 //
 //$Mindi = new Person();
@@ -22,6 +22,13 @@ require_once('vendor/autoload.php');
 //var_dump($Mindi);
 //var_dump($Billy);
 
+// access modifiers
 use PhpThis\Person\Student;
-$tmpStudent = new Student ("Mindi", "22");
-echo "Name : " . $tmpStudent->name;
+//$tmpStudent = new Student ("Mindi", "22");
+//echo "Name : " . $tmpStudent->name; // causes an error
+
+// inheritance pt 1
+$tmpStudent = new Student();
+$tmpStudent->setName("Mindi");
+$tmpStudent->name = "Mindi"; // causes an error - $name is protected, not public
+
