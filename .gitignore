@@ -1,3 +1,5 @@
 /vendor/
 composer.lock
 phpthis.phprj
+.codelite/
+phpthis.workspace
