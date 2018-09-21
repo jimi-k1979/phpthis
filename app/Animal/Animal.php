@@ -6,4 +6,8 @@ class Animal {
     $this->created = time();
     $this->logfile_handle = fopen('log.txt', 'w');
   }
+  
+  public function __destruct() {
+    fclose($this->logfile_handle);
+  }
 }
