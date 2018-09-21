@@ -1,7 +1,7 @@
 <?php
 require_once('vendor/autoload.php');
 
-use PhpThis\Person\Employee;
+use PhpThis\Animal\Cow;
 
-$c = new Employee();
-
+$milky = new Cow();
+echo $milky->created;
