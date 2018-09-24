@@ -9,4 +9,9 @@ class CallTest {
     var_dump($args);
     return $this->v;
   }
+  
+  public function test($args) {
+    echo "The method \"test\" exists now!\n";
+    return NULL;
+  }
 }
