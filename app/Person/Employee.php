@@ -37,4 +37,10 @@ class Employee extends Person {
   public function __sleep() {
     return array("fname"); // because of this, only name is serialized
   }
+  
+  public function __wakeup() {
+    if ($this->fname == "Marsha") {
+      $this->date_of_birth = "09-12-1983";
+    }
+  }
 }

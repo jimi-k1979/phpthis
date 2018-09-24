@@ -8,4 +8,4 @@ $e->setFirstName("Marsha");
 $e->setBirthDate("09-12-1983");
 
 $data = serialize($e)."\n";
-echo $data."\n";
+var_dump(unserialize($data));
