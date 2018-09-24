@@ -1,8 +1,11 @@
 <?php
 require_once('vendor/autoload.php');
 
-use PhpThis\Test\CallTest;
+use PhpThis\Person\Employee;
 
-$example = new CallTest();
-$a = $example->test('f', 'o', 'o');
-var_dump($a);
+$e = new Employee();
+$e->setFirstName("Marsha");
+$e->setBirthDate("09-12-1983");
+
+$data = serialize($e)."\n";
+echo $data."\n";
