@@ -1,11 +1,16 @@
 <?php
 require_once('vendor/autoload.php');
 
-use PhpThis\Person\Employee;
+class CopyClass {
+  public $name;
+}
 
-$e = new Employee();
-$e->setFirstName("Marsha");
-$e->setBirthDate("09-12-1983");
+$first = new CopyClass;
+$first->name = "Number 1";
+$second = clone $first;
+echo "first = " . $first->name . "\n\n";
 
-$data = serialize($e)."\n";
-var_dump(unserialize($data));
+$second->name = "Number 2";
+
+echo "first = " . $first->name . "\n";
+echo "second = " . $second->name . "\n";
