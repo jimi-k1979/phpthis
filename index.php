@@ -1,15 +1,13 @@
 <?php
 require_once('vendor/autoload.php');
 
-// Method Overriding
-use PhpThis\Menu\Martini;
-use PhpThis\Menu\VodkaTonic;
+use PhpThis\GameMechanics\ScaryRoad;
+use PhpThis\Person\Cop;
+use PhpThis\Animal\GrizzlyBear;
 
-$m = new Martini();
-$vt = new VodkaTonic();
+$cop1 = new Cop;
+$grizzly1 = new GrizzlyBear;
+$grizzly2 = new GrizzlyBear;
 
-$m->stir();
-echo "\n";
-$vt->stir();
-echo "\n";
-
+$road = new ScaryRoad;
+$road->DriveCar($threats = [$cop1, $grizzly1, $grizzly2]);
