@@ -2,5 +2,5 @@
 namespace PhpThis\Menu;
 
 interface DinnerPortionInterface {
-  public function setDinnerPortion();
+  public function setDinnerPortion($oMenuItem);
 }

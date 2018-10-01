@@ -2,6 +2,8 @@
 namespace PhpThis\Menu;
 
 class HappyHourMenu extends DrinkMenu implements HappyHourDrinkPrices {
+  
+  static public $title = "Happy Hour Drink Menu";
 
   public function setHappyHourDrinkPrices($oDrink): float {
     $adjusted_price = 1;

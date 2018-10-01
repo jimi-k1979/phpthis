@@ -2,6 +2,9 @@
 namespace PhpThis\Menu;
 
 final class DinnerMenu extends LunchMenu implements DinnerPortionInterface, DinnerPricesInterface {
+  
+  static public $title = "Dinner Menu";
+  
   public function setDinnerPortion($oMenuItem) {
     $adjustedServingSize = 1;
     $baseServingSize = $oMenuItem->getServingSize();
