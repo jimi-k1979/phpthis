@@ -25,10 +25,8 @@ require_once('vendor/autoload.php');
 //echo DinnerMenu::$title . "\n";
 //echo $tmpMenuItem->getItemName() . ' - £' . $tmpDinnerMenu->setDinnerPrices($tmpMenuItem) . "\n\n";
 
-use \PhpThis\CountInstanceOfMyself;
+use \PhpThis\House\FlatScreenTV;
+use \PhpThis\House\Couch;
 
-$a = new CountInstanceOfMyself();
-$b = new CountInstanceOfMyself();
-$c = new CountInstanceOfMyself();
-
-echo CountInstanceOfMyself::$instances;
+Couch::create();
+FlatScreenTV::create();
