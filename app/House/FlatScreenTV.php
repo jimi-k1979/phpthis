@@ -1,5 +1,5 @@
 <?php
 namespace PhpThis\House;
 
-class FlatScreenTV extends AbstractHouseholdObect {
+class FlatScreenTV extends AbstractHouseholdObject {
 }
